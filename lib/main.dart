@@ -172,7 +172,7 @@ class _AppHomeState extends State<AppHome> {
         destinations: const [
           NavigationDestination(icon: Icon(Icons.newspaper), label: "News"),
           NavigationDestination(icon: Icon(Icons.heart_broken), label: "Likes"),
-          NavigationDestination(icon: Icon(Icons.person), label: "Profilce"),
+          NavigationDestination(icon: Icon(Icons.person), label: "Profile"),
         ],
       ),
     );
