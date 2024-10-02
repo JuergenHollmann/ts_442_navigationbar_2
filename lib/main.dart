@@ -75,26 +75,22 @@ class LikesWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 64),
-        child: Column(
-          children: [
-            SizedBox(height: 20),
-            Text("Likes",
-                style: TextStyle(
-                  fontSize: 28,
-                )),
-            SizedBox(height: 20),
-            Center(
-              // warum wird der Text nicht zentriert?
-              child: Text(
-                "Hier findest du deine gelikten Nachrichten.",
-                style: TextStyle(fontSize: 18),
-              ),
-            ),
-          ],
-        ),
+    return const Padding(
+      padding: EdgeInsets.symmetric(horizontal: 64),
+      child: Column(
+        children: [
+          SizedBox(height: 20),
+          Text("Likes",
+              style: TextStyle(
+                fontSize: 28,
+              )),
+          SizedBox(height: 20),
+          Text(
+            "Hier findest du deine gelikten Nachrichten.",
+            style: TextStyle(fontSize: 18),
+            textAlign: TextAlign.center,
+          ),
+        ],
       ),
     );
   }
